@@ -40,7 +40,7 @@ namespace EarinProject
 				dijkstra.FindPath(graph.Vertices.TakeRandom(), graph.Vertices.TakeRandom()).PrintToConsole();
 			}
 			
-			
+			/*
 			var graphs = Enumerable.Repeat(new Graph(numOfVertices, minCost, maxCost, everageBranching), repeat).ToList();
 			var results = new List<List<SimpleReport>>();
 
@@ -55,7 +55,7 @@ namespace EarinProject
 			}
 
 			var finalRaport = ReportGenerator.GenerateFullReport(averageResults);
-			finalRaport.ToFile(reportFile);
+			finalRaport.ToFile(reportFile);*/
 		}
 
 		

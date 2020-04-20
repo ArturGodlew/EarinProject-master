@@ -63,6 +63,7 @@ namespace EarinProject.RouteFinder.Evaluation
             var previousPath = aveliablePaths.ToList().Find(e => _distances[e.GetOtherVertex(end)] == lowestCost - e.Length);
 
 
+
             var previousNode = previousPath.GetOtherVertex(end);
             route.Path = route.Path.Prepend(previousNode).ToList();
             route.EdgePath = route.EdgePath.Prepend(previousPath).ToList();

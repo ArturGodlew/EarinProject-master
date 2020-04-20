@@ -25,17 +25,20 @@ namespace Shared
 		}
 
 		public void PrintToConsole()
-		{
+		{			
 			Console.WriteLine($"target reachable in {Path.Count - 1} moves");
 			foreach(var vertex in Path)
 			{
 				Console.Write($"{vertex.Id}, ");
 			}
+			Console.WriteLine();
 			Console.WriteLine($"by paths");
 			foreach (var edge in EdgePath)
 			{
 				Console.Write($"{edge.Id}, ");
 			}
+			Console.WriteLine();
+			Console.WriteLine();
 		}
 
 		public void moveOne()
